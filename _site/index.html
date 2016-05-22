@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,9 +32,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-
+    <script src="https://linked.chat/web/4eWkEe" async></script>
 </head>
 
 <body id="page-top">
@@ -82,9 +82,18 @@
             <br>
             <h1>Take control of your chat rooms.</h1>
             <br>
-            <p class="light subline">Midori is a Slack bot that allows you to build commands on the fly right in the chat box.</p>
+            <p class="light subline">Midori is a multi-platform chat bot that allows you to build commands on the fly right in the chat box.</p>
             <br><br>
-            <a href="#works" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <div class="row">
+            <div class="col-lg-4 text-center">
+                <a href="#works" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3>Or</h3>
+            </div>
+            <div class="col-lg-4 text-center">
+                <a href="https://midori-community.herokuapp.com/" class="btn btn-primary btn-xl page-scroll">Join the Community</a>
+            </div>
         </div>
     </header>
      <section id="works">
@@ -250,8 +259,17 @@
     </section>
     <aside class="bg-dark">
         <div class="container text-center">
-            <div class="call-to-action">
-                <a href="#" class="btn btn-default btn-xl wow page-scroll">Add to Slack.</a>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="call-to-action">
+                        <a href="#" class="btn btn-default btn-xl wow page-scroll">Add to Slack.</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="call-to-action">
+                        <a href="#" class="btn btn-default btn-xl wow page-scroll">Add to Cisco Spark.</a>
+                    </div>
+                </div>
             </div>
         </div>
     </aside>
@@ -271,6 +289,15 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+   <script type="text/javascript">
+    window._chatlio = window._chatlio||[];
+    !function(){ var t=document.getElementById("chatlio-widget-embed");if(t&&window.ChatlioReact&&_chatlio.init)return void _chatlio.init(t,ChatlioReact);for(var e=function(t){return function(){_chatlio.push([t].concat(arguments)) }},i=["configure","identify","track","show","hide","isShown","isOnline"],a=0;a<i.length;a++)_chatlio[i[a]]||(_chatlio[i[a]]=e(i[a]));var n=document.createElement("script"),c=document.getElementsByTagName("script")[0];n.id="chatlio-widget-embed",n.src="https://w.chatlio.com/w.chatlio-widget.js",n.async=!0,n.setAttribute("data-embed-version","2.1");
+       n.setAttribute('data-widget-id','d1e1c59b-8603-45be-5233-036e0e142b6e');
+       c.parentNode.insertBefore(n,c);
+    }();
+</script>
+
+
 
 </body>
 

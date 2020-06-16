@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Midori</title>
+    <title>Jabbot</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">midori</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Midori Jabbot</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,6 +63,9 @@
                     </li> -->
                     <li>
                         <a class="page-scroll" href="#getstarted">GET STARTED</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#installing">Installing Jabbot</a>
                     </li>
                     <!-- <li>
                         <a class="page-scroll" href="#resources">MORE RESOURCES</a>
@@ -81,7 +84,8 @@
             <br>
             <h1>Take control of your chat rooms.</h1>
             <br>
-            <p class="light subline">Midori is a multi-platform chat bot that allows you to build commands on the fly right in the chat box.</p>
+            <p class="light subline">Jabbot is a multi-platform chat bot that allows you to build commands on the fly right in the chat box.</p>
+            <p class="light subline">Midori is our showcase Jabbot instance allowing you to test w/o any installation..</p>
             <br><br>
             <div class="row">
 		    <div class="col-lg-12 text-center">
@@ -136,7 +140,7 @@
                 <div class="col-lg-6 text-center">
                     <img class="midorigif" src="img/midori-weather.gif">
                 </div>
-            </div>
+    	    </div>
             <hr class="normal gifs">
              <div class="row">
                 <div class="col-lg-6 text-center">
@@ -213,11 +217,47 @@
             </div>
             <br>
             <br>
-            <!-- <div class="row">
-                <div class="col-lg-12 text-center">
-                    <a href="/documentation" class="btn btn-primary btn-xl page-scroll">Look at the Full Technical Documentation</a>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <a href="https://github.com/midoricorp/script/blob/master/README.md" class="btn btn-primary btn-xl page-scroll">Look at the Full Technical Documentation</a>
                 </div>
-            </div> -->
+                <div class="col-lg-6 text-center">
+                    <a href="https://github.com/midoricorp/snippets/" class="btn btn-primary btn-xl page-scroll">Look at Example Commands</a>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="installing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading primary">Installing your own Jabbot</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+		    <h3>The easiest way to install it is via our apt repo</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+		    <pre><code class="bash">
+sudo apt-get install apt-transport-https ca-certificates
+echo "deb [trusted=yes] https://dl.bintray.com/midoricorp/deb unstable main" > /etc/apt/sources.list.d/midoricorp-jabbot.list
+sudo apt-get update
+sudo apt-get install jabbot-full
+		    </code></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+		    <h3>Or check out <a>our project page</a> to find out how to install master</h3>
+                </div>
+            </div>
+
         </div>
     </section>
     <hr class="normal">
